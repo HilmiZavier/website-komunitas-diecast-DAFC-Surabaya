@@ -16,7 +16,7 @@ const home = () => {
         <section
             className="relative overflow-hidden bg-cover bg-center bg-no-repeat text-white min-h-screen flex items-center"
             style={{ 
-                backgroundImage: "url('src/assets/img/poce3_PhotoGrid.png')",
+                backgroundImage: "url('./images/poce3_PhotoGrid.png')",
                 backgroundPosition: "center center",
                 backgroundSize: "cover"
             }}
@@ -32,7 +32,7 @@ const home = () => {
                         className="relative">
                             <div className="w-24 h-24 sm:w-32 sm:h-32 lg:w-37 lg:h-37 rounded-2xl sm:rounded-3xl flex items-center bg-[#5fe1e5] p-2"> 
                                 <img 
-                                    src="src/assets/img/logo-DAFC-bg-white-Photoroom copy.png" 
+                                    src="./images/logo-DAFC-bg-white-Photoroom copy.png" 
                                     alt="logo DAFC"
                                     className="w-full h-full object-contain"
                                 />
@@ -100,7 +100,7 @@ const home = () => {
                     <div className="relative order-1 lg:order-2">
                         <div className="relative z-10">
                             <img
-                                src="src/assets/img/ferrari2.jpg"
+                                src="./images/ferrari2.jpg"
                                 alt="Ferrari diecast collection"
                                 className="w-full h-64 sm:h-80 lg:h-100 rounded-2xl sm:rounded-3xl shadow-2xl object-cover"
                             />
@@ -117,7 +117,7 @@ const home = () => {
                         <div className="flex flex-col sm:flex-row items-center sm:items-start space-y-3 sm:space-y-0 sm:space-x-3 mb-4 text-center sm:text-left">
                             <div className="bg-gradient-to-br rounded-xl flex items-center justify-center bg-white w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0">
                                 <img
-                                    src="src/assets/img/DAFC-bg-white.png"
+                                    src="./images/DAFC-bg-white.png"
                                     alt="DAFC Logo"
                                     className="w-full h-full object-contain p-1"
                                 />

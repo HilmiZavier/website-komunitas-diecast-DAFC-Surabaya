@@ -17,47 +17,47 @@ const GalleryWebsite = () => {
   const galleryImages = [
     {
       id: 1,
-      src: "src/assets/img/ferrari1.jpg",
+      src: "./images/ferrari1.jpg",
       title: "Ferrari Collection 1"
     },
     {
       id: 2,
-      src: "src/assets/img/ferrari2.jpg",
+      src: "./images/ferrari2.jpg",
       title: "Ferrari Collection 2"
     },
     {
       id: 3,
-      src: "src/assets/img/ferrari3.jpg",
+      src: "./images/ferrari3.jpg",
       title: "Ferrari Collection 3"
     },
     {
       id: 4,
-      src: "src/assets/img/musang1.jpg",
+      src: "./images/musang1.jpg",
       title: "Musang Collection"
     },
     {
       id: 5,
-      src: "src/assets/img/poce1.jpg",
+      src: "./images/poce1.jpg",
       title: "Poce Collection 1"
     },
     {
       id: 6,
-      src: "src/assets/img/poce2.jpg",
+      src: "./images/poce2.jpg",
       title: "Poce Collection 2"
     },
     {
       id: 7,
-      src: "src/assets/img/poce3.jpg",
+      src: "./images/poce3_PhotoGrid.png",
       title: "Poce Collection 3"
     },
     {
       id: 8,
-      src: "src/assets/img/transformer2.jpg",
+      src: "./images/transformer2.jpg",
       title: "Transformer Collection 2"
     },
     {
       id: 9,
-      src: "src/assets/img/transformer3.jpg",
+      src: "./images/transformer3.jpg",
       title: "Transformer Collection 3"
     },
   ];
