@@ -1,10 +1,11 @@
 import { Images, ArrowRightToLine, Menu, X } from 'lucide-react';
 import { Link, Outlet } from "react-router-dom";
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const Navigate = useNavigate();
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -33,13 +34,13 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-stretch space-x-1">
-            <a 
-              href="/galeri" 
+            <button 
+              onClick={() => Navigate("/galeri")}
               className="btn btn-ghost rounded-field hover:bg-[#1f1f1e] hover:text-[#FFD700] transition duration-300 text-black font-semibold text-base lg:text-lg"
             >
               <Images size={20} className='mr-1'/>
               Galeri
-            </a>
+            </button>
             <a 
               href="https://docs.google.com/forms/d/e/1FAIpQLSfxcdkpw8_xweHPDe1juZJWAqCqiUEHW7xLQoHJvPcU4bT5zw/viewform?usp=sharing&ouid=102217062272345957417" 
               target="_blank" 
