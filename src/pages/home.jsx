@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const home = () => {
-    const navigate = useNavigate();
+    const Navigate = useNavigate();
     const scrollToSection = () => {
         const section = document.getElementById("tentang-kami");
         if (section) {
@@ -32,7 +32,7 @@ const home = () => {
                         className="relative">
                             <div className="w-24 h-24 sm:w-32 sm:h-32 lg:w-37 lg:h-37 rounded-2xl sm:rounded-3xl flex items-center bg-[#5fe1e5] p-2"> 
                                 <img 
-                                    src="src/assets/img/logo DAFC bg white-Photoroom.png" 
+                                    src="src/assets/img/logo-DAFC-bg-white-Photoroom copy.png" 
                                     alt="logo DAFC"
                                     className="w-full h-full object-contain"
                                 />
@@ -64,7 +64,7 @@ const home = () => {
                     className="flex flex-col sm:flex-row gap-4 justify-center px-4">
                         <button
                             className="flex items-center justify-center border-2 border-white text-white px-6 sm:px-8 lg:px-13 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg hover:bg-white hover:text-black transform hover:scale-105 transition-all duration-200 w-full sm:w-auto"
-                            onClick={() => navigate("/galeri")}
+                            onClick={() => Navigate("/galeri")}
                         >
                             <Images size={20} className="mr-2 sm:mr-3" /> Lihat Galeri
                         </button>
@@ -117,7 +117,7 @@ const home = () => {
                         <div className="flex flex-col sm:flex-row items-center sm:items-start space-y-3 sm:space-y-0 sm:space-x-3 mb-4 text-center sm:text-left">
                             <div className="bg-gradient-to-br rounded-xl flex items-center justify-center bg-white w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0">
                                 <img
-                                    src="src/assets/img/logo DAFC bg white-Photoroom.png"
+                                    src="src/assets/img/DAFC-bg-white.png"
                                     alt="DAFC Logo"
                                     className="w-full h-full object-contain p-1"
                                 />

@@ -24,7 +24,7 @@ const Navbar = () => {
               className="text-xl font-bold btn btn-ghost rounded-selector p-2 sm:p-4 lg:p-8 transform transition duration-300 hover:scale-105 hover:opacity-80"
             >
               <img
-                src="src/assets/img/logo DAFC bg white-Photoroom.png"
+                src="src/assets/img/logo-DAFC-bg-white-Photoroom copy.png"
                 alt="Logo"
                 className="w-8 h-8 sm:w-10 sm:h-10 lg:w-full lg:h-30"
               />

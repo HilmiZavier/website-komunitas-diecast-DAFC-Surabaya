@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 
 const GalleryWebsite = () => {
-  const [loading, setLoading] = useState(true);
+  const [, setLoading] = useState(true);
   const [selectedImage, setSelectedImage] = useState(null);
 
   // Simulasi loading
@@ -62,7 +62,7 @@ const GalleryWebsite = () => {
     },
   ];
 
-  const [activeCategory, setActiveCategory] = useState("All");
+  const [activeCategory] = useState("All");
 
   const filteredImages = activeCategory === "All" 
     ? galleryImages 
