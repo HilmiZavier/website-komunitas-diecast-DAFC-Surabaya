@@ -71,14 +71,15 @@ const Navbar = () => {
             : 'max-h-0 opacity-0 overflow-hidden'
         }`}>
           <div className="px-4 py-2 space-y-2 bg-[#5fe1e5] border-t border-[#4dd0d4] ">
-            <a 
+            <button 
               href="/galeri" 
               className="flex items-center w-full px-4 py-3 text-black font-semibold hover:bg-[#1f1f1e] hover:text-[#FFD700] rounded-lg transition duration-300"
-              onClick={closeMenu}
+              onClick={() => Navigate("/galeri")}
+              
             >
               <Images size={20} className='mr-3'/>
               Galeri
-            </a>
+            </button>
             <a 
               href="https://docs.google.com/forms/d/e/1FAIpQLSfxcdkpw8_xweHPDe1juZJWAqCqiUEHW7xLQoHJvPcU4bT5zw/viewform?usp=sharing&ouid=102217062272345957417" 
               target="_blank" 

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 const GalleryWebsite = () => {
   const [, setLoading] = useState(true);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   // Simulasi loading
   useEffect(() => {
@@ -81,12 +82,10 @@ const GalleryWebsite = () => {
           
           <img
             src={image.src}
-            alt={image.title}
+            
             className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
           />
-          <div className="text-white text-center mt-4">
-            <h3 className="text-lg font-semibold">{image.title}</h3>
-          </div>
+          
       </div>
     );
   };
@@ -103,7 +102,9 @@ const GalleryWebsite = () => {
               ease: "easeInOut",
               delay: 0.2,
             }}
-            className="text-3xl sm:text-4xl lg:text-4xl font-bold mb-4 mt-16 sm:mt-20 lg:mt-10 text-base-content"
+            className={`text-3xl sm:text-4xl lg:text-4xl font-bold mb-4 mt-16 sm:mt-20 lg:mt-10 ${
+    isDarkMode ? 'text-gray-300' : 'text-gray-600'
+  }`}
           >
             Galeri DAFC
           </motion.h2>
@@ -115,7 +116,9 @@ const GalleryWebsite = () => {
               ease: "easeInOut",
               delay: 0.2,
             }}
-            className="text-base sm:text-lg lg:text-lg text-base-content/70 max-w-4xl mx-auto px-4"
+            className={`text-base sm:text-lg lg:text-lg max-w-4xl mx-auto px-4 ${
+    isDarkMode ? 'text-gray-300' : 'text-gray-600'
+  }`}
           >
             Galeri koleksi diecast dan action figure terbaik dari anggota komunitas DAFC Surabaya.
           </motion.p>

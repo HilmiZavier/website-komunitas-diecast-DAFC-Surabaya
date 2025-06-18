@@ -148,12 +148,12 @@ const home = () => {
                                 </button>
                             </li>
                             <li>
-                                <a
-                                    href="/galeri"
+                                <button
+                                    onClick={() => Navigate("/galeri")}
                                     className="hover:text-white transition-colors"
                                 >
                                     Galeri
-                                </a>
+                                </button>
                             </li>
                             <li>
                                 <a
