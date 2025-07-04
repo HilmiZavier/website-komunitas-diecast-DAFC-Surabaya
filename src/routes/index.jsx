@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Layout from "../layout/navbar"
 import Home from "../pages/home";
 import Galleri from "../pages/galeri";
+import Tricks from "../pages/tricks";
 
 const route = createBrowserRouter([
     {
@@ -15,7 +16,12 @@ const route = createBrowserRouter([
             {
                 path: "/galeri",
                 element: <Galleri/>
-            }
+            },
+            {
+                path: "/Edukasi",
+                element: <Tricks/>
+            },
+            
         ],
     },
 ]);
