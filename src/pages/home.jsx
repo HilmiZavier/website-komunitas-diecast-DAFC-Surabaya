@@ -205,7 +205,7 @@ const home = () => {
                         </div>
                         <div className="flex-1">
                         <div className="badge badge-warning badge-lg mb-4 font-bold">
-                            Misi {item.id}
+                            {item.id}
                         </div>
                         <p className="text-gray-700 leading-relaxed text-lg font-semibold">
                             {item.text}
