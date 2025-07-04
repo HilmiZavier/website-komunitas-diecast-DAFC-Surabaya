@@ -10,6 +10,38 @@ const home = () => {
         section.scrollIntoView({ behavior: "smooth" });
         }
     };
+    const misiItems = [
+        {
+        id: 1,
+        text: "Membangun wadah komunikasi dan kolaborasi antar kolektor diecast dan action figure di Surabaya.",
+        icon: "👥"
+        },
+        {
+        id: 2,
+        text: "Menyelenggarakan kegiatan rutin seperti kopdar (kopi darat) untuk saling bertemu, bertukar informasi dan pengalaman.",
+        icon: "☕"
+        },
+        {
+        id: 3,
+        text: "Mengedukasi masyarakat mengenai nilai seni, sejarah, dan budaya dalam hobi koleksi diecast dan action figure.",
+        icon: "🎓"
+        },
+        {
+        id: 4,
+        text: "Mendorong kreativitas anggota melalui custom, fotografi, dan konten kreatif berbasis koleksi.",
+        icon: "🎨"
+        },
+        {
+        id: 5,
+        text: "Menjalin kerja sama dengan komunitas lain, pelaku industri kreatif, dan institusi terkait untuk mendukung eksistensi dan pertumbuhan komunitas.",
+        icon: "🤝"
+        },
+        {
+        id: 6,
+        text: "Mengembangkan platform digital komunitas sebagai sarana dokumentasi kegiatan dan interaksi yang lebih luas.",
+        icon: "💻"
+        }
+    ];
     
     return (
         <>
@@ -86,7 +118,7 @@ const home = () => {
                                 <span>Tentang</span>
                                 <span className="text-[#fdd001] sm:ml-3">Kami</span>
                             </h1>
-                            <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed max-w-none lg:max-w-lg mt-6 sm:mt-10 text-justify">
+                            <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed max-w-none lg:max-w-lg mt-6 sm:mt-10 text-justify font-semibold">
                                 Diecast & Action Figure Collector Surabaya merupakan komunitas
                                 penggemar mainan, khususnya kolektor miniatur mobil dan action
                                 figure, yang berbasis di Surabaya. Komunitas ini resmi
@@ -107,6 +139,87 @@ const home = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section className="bg-[#c8e5e6] py-16 px-4">
+        <div className="max-w-7xl mx-auto">
+            {/* Header */}
+            <div className="text-center mb-16">
+            <div className="badge badge-warning badge-lg mb-4">DAFC Surabaya</div>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                Visi & Misi
+            </h1>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Diecast & Action Figure Collector Surabaya
+            </p>
+            </div>
+
+            {/* Visi Section */}
+            <div className="mb-16">
+            <div className="card bg-white shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                <div className="card-body">
+                <div className="flex items-center gap-4 mb-6">
+                    <div className="avatar">
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 flex items-center justify-center">
+                        <span className="text-2xl">🎯</span>
+                    </div>
+                    </div>
+                    <h2 className="card-title text-3xl font-bold text-gray-800">VISI</h2>
+                </div>
+                <div className="bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg p-6 text-white">
+                    <p className="text-lg leading-relaxed font-semibold">
+                    Diecast & Action Figure Collector Surabaya (DAFC) menjadi komunitas yang mewadahi para kolektor diecast dan action figure di Surabaya dalam mempererat tali persaudaraan, meningkatkan pengetahuan, serta mengembangkan potensi secara edukatif dan inspiratif.
+                    </p>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            {/* Misi Section */}
+            <div>
+            <div className="text-center mb-12">
+                <div className="flex items-center justify-center gap-4 mb-6">
+                <div className="avatar">
+                                    <div className="w-16 h-16 rounded-full bg-gradient-to-r from-orange-400 to-yellow-500 flex items-center justify-center">
+                    <span className="text-2xl">🚀</span>
+                    </div>
+                </div>
+                <h2 className="text-3xl font-bold text-gray-800">MISI</h2>
+                </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {misiItems.map((item, index) => (
+                <div 
+                    key={item.id} 
+                    className="card bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 min-h-[280px]"
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                    <div className="card-body p-8">
+                    <div className="flex items-start gap-6">
+                        <div className="avatar">
+                        <div className="w-16 h-16 rounded-full bg-gradient-to-r from-yellow-400 to-orange-400 flex items-center justify-center flex-shrink-0">
+                            <span className="text-2xl">{item.icon}</span>
+                        </div>
+                        </div>
+                        <div className="flex-1">
+                        <div className="badge badge-warning badge-lg mb-4 font-bold">
+                            Misi {item.id}
+                        </div>
+                        <p className="text-gray-700 leading-relaxed text-lg font-semibold">
+                            {item.text}
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                ))}
+            </div>
+            </div>
+
+            {/* Footer CTA */}
+
             </div>
         </section>
 
