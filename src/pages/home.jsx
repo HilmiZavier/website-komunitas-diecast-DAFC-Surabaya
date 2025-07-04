@@ -162,7 +162,7 @@ const home = () => {
                 <div className="flex items-center gap-4 mb-6">
                     <div className="avatar">
                     <div className="w-16 h-16 rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 flex items-center justify-center">
-                        <span className="text-2xl">🎯</span>
+                        <span className="text-4xl flex justify-center ml-1 mt-2">🎯</span>
                     </div>
                     </div>
                     <h2 className="card-title text-3xl font-bold text-gray-800">VISI</h2>
@@ -182,10 +182,10 @@ const home = () => {
                 <div className="flex items-center justify-center gap-4 mb-6">
                 <div className="avatar">
                                     <div className="w-16 h-16 rounded-full bg-gradient-to-r from-orange-400 to-yellow-500 flex items-center justify-center">
-                    <span className="text-2xl">🚀</span>
+                    <span className="text-4xl flex justify-center mt-2">🚀</span>
                     </div>
                 </div>
-                <h2 className="text-3xl font-bold text-gray-800">MISI</h2>
+                <h2 className="text-3xl font-bold text-gray-800 flex justify-center">MISI</h2>
                 </div>
             </div>
 
@@ -200,7 +200,7 @@ const home = () => {
                     <div className="flex items-start gap-6">
                         <div className="avatar">
                         <div className="w-16 h-16 rounded-full bg-gradient-to-r from-yellow-400 to-orange-400 flex items-center justify-center flex-shrink-0">
-                            <span className="text-2xl">{item.icon}</span>
+                            <span className="text-4xl flex justify-center mt-2">{item.icon}</span>
                         </div>
                         </div>
                         <div className="flex-1">
