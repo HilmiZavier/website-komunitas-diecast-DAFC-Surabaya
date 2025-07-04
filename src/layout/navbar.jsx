@@ -33,7 +33,7 @@ const Navbar = () => {
               <img
                 src="./images/logo-DAFC-bg-white-Photoroom copy.png"
                 alt="Logo"
-                className="w-full h-auto object-containn"
+                className="w-30 h-auto object-containn"
               />
 
             </button>
