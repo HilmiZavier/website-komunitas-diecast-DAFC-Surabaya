@@ -3,6 +3,7 @@ import { Link, Outlet } from "react-router-dom";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const Navigate = useNavigate();
@@ -24,7 +25,7 @@ const Navbar = () => {
       <nav className="fixed top-0 left-0 w-full z-50 bg-[#5fe1e5] shadow-2xl">
         <div className="flex justify-between items-center px-4 sm:px-6 lg:px-10 py-2 lg:py-1">
           {/* Logo */}
-          <div className="flex">
+          <div className="flex max-w-[72px]">
             <button 
               onClick={() => Navigate("/")}
               className="text-xl font-bold btn btn-ghost rounded-selector p-2 sm:p-4 lg:p-8 transform transition duration-300 hover:scale-105 hover:opacity-80"
@@ -32,8 +33,9 @@ const Navbar = () => {
               <img
                 src="./images/logo-DAFC-bg-white-Photoroom copy.png"
                 alt="Logo"
-                className="w-8 h-8 sm:w-10 sm:h-10 lg:w-full lg:h-30"
+                className="w-full h-auto object-containn"
               />
+
             </button>
           </div>
 

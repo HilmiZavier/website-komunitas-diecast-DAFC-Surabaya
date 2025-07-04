@@ -85,7 +85,7 @@ const koleksiTips = [
     },
     {
         judul: "Fotografi Action Figure",
-        image : './images/diorama3.jpg',
+        image : './images/transform1.jpg',
         tips: [
         "Dynamic lighting: Mainkan dengan arah cahaya untuk efek dramatis",
         "Depth of field: Gunakan aperture besar (f/1.8–f/2.8) untuk background blur",
@@ -120,7 +120,7 @@ const koleksiTips = [
     items: [
     {
         judul: "Inspirasi Pose Fotografi",
-        image : './images/transformer1.jpg',
+        image : './images/transform2.jpg',
         tips: [
         "Action poses: Jumping, punching, kicking untuk kesan dinamis",
         "Dramatic stances: Hero landing, power-up pose, intimidating stance",
@@ -187,7 +187,7 @@ return (
                                 <img
                                     src={item.image}
                                     alt={`Gambar untuk ${item.judul}`}
-                                    className="w-full h-48 sm:h-64 md:h-80 lg:h-100 object-cover transition-transform duration-500 group-hover:scale-105"
+                                    className="w-full h-full sm:h-64 md:h-80 lg:h-130 object-cover transition-transform duration-500 group-hover:scale-105"
                                 />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         </div>

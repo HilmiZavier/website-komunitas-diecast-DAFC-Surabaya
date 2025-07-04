@@ -217,9 +217,7 @@ const home = () => {
                 ))}
             </div>
             </div>
-
             {/* Footer CTA */}
-
             </div>
         </section>
 
